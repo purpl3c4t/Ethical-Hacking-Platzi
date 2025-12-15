@@ -1,4 +1,4 @@
-# ⚖️ Implicaciones Legales y Arquitectura de Laboratorio en AWS
+# Implicaciones Legales y Arquitectura de Laboratorio en AWS
 
 Antes de tocar una sola línea de código o lanzar un escáner, debemos entender las reglas del juego. En esta sesión teórica, cubriremos dos pilares: el marco legal que protege tu carrera profesional y los conceptos de infraestructura en la nube necesarios para montar tu propio laboratorio de hacking en AWS.
 
