@@ -43,21 +43,21 @@ Le damos al escáner un usuario y contraseña (administrador o root) para que in
 
 ### Conceptos de Configuración en Nessus (Settings)
 
-#### 1. Discovery (Descubrimiento)
+#### 1. Discovery 
 Define cómo encuentra Nessus los objetivos.
 * **Host Discovery:** Si estás en una red interna y ya sabes qué IPs atacar, a veces conviene desactivar el "Ping" (ICMP), ya que los firewalls de Windows suelen bloquearlo y Nessus podría pensar erróneamente que el host está apagado.
 
-#### 2. Port Scanning (Escaneo de Puertos)
+#### 2. Port Scanning 
 Define qué puertos revisará.
 * **Rango de Puertos:** Por defecto, escanea los puertos "comunes" (aprox. 4,000). En una auditoría crítica, debes cambiar esto a "All ports" (1-65535), aunque tomará mucho más tiempo.
 * **Técnica:** SYN Scan (medio abierto) es el estándar por ser rápido y sigiloso.
 
-#### 3. Assessment (Evaluación) - La "Intensidad"
+#### 3. Assessment 
 Aquí definimos qué tan agresivo será el escáner.
 * **Web Applications:** Nessus puede intentar escanear vulnerabilidades web (SQLi, XSS), pero **cuidado**. Los escáneres web son muy agresivos y pueden llenar bases de datos con basura o bloquear cuentas de usuario. Generalmente, se recomienda usar herramientas especializadas (como OWASP ZAP o Burp Suite) para la web y dejar a Nessus para la infraestructura.
 * **Brute Force:** Nessus puede intentar adivinar contraseñas (Hydra style). En entornos de producción, esto suele desactivarse para no bloquear cuentas de Directorio Activo por intentos fallidos.
 
-#### 4. Report (Reporte)
+#### 4. Report 
 Configura cómo se presenta la información.
 * **Paranoia Level (Nivel de Paranoia):** Si lo subes, Nessus reportará vulnerabilidades incluso si no está 100% seguro. Útil para entornos de ultra-seguridad donde no quieres que se escape nada, pero prepárate para muchos falsos positivos.
 
