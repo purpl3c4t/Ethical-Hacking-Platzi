@@ -1,5 +1,6 @@
 # 📡 Objetivo y uso del hacking ético en la vida real
 
+---
 En un mundo hiperconectado, la seguridad absoluta es una ilusión. La única forma de saber si nuestras defensas funcionan es poniéndolas a prueba. Aquí es donde entra el **Hacking Ético**. En esta lección, exploraremos qué es realmente, por qué es vital para las organizaciones modernas y cómo se diferencia de la ciberdelincuencia.
 ---
 
