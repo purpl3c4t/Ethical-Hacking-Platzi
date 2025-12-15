@@ -1,21 +1,19 @@
-# 📡 Objetivo y uso del hacking ético en la vida real
+# Objetivo y Uso del Hacking Ético en la Vida Real
 
----
 En un mundo hiperconectado, la seguridad absoluta es una ilusión. La única forma de saber si nuestras defensas funcionan es poniéndolas a prueba. Aquí es donde entra el **Hacking Ético**. En esta lección, exploraremos qué es realmente, por qué es vital para las organizaciones modernas y cómo se diferencia de la ciberdelincuencia.
+
 ---
 
 > **⚠️ Disclaimer Ético:** Esta información se proporciona con fines exclusivamente educativos y para la formación de profesionales en ciberseguridad. La ejecución de estos ataques en redes sin autorización explícita es ilegal y penada por la ley. Practica siempre en tu propio laboratorio controlado.
 
 ---
-# 🛡️ Objetivo y Uso del Hacking Ético en la Vida Real
+#  Objetivo y Uso del Hacking Ético en la Vida Real
 
 A menudo, la palabra "Hacker" evoca imágenes de criminales encapuchados robando datos. Sin embargo, en la industria de la ciberseguridad, un hacker es simplemente alguien con un conocimiento profundo de sistemas informáticos, redes y programación, capaz de manipularlos para que hagan cosas para las que no fueron diseñados originalmente.
 
 El **Hacking Ético** (o *White Hat Hacking*) es la práctica de utilizar esas mismas habilidades y herramientas que usaría un atacante malicioso, pero con dos diferencias fundamentales:
 1.  **Autorización:** Existe un permiso explícito y por escrito del propietario del sistema.
 2.  **Propósito:** El objetivo es identificar vulnerabilidades para reportarlas y repararlas, no para explotarlas.
-
-> **💡 Concepto Clave:** "Para atrapar a un ladrón, debes pensar como un ladrón". El Hacking Ético es la medicina preventiva de la seguridad digital.
 
 ---
 
