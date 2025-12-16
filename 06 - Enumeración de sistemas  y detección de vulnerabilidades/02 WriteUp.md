@@ -1,4 +1,4 @@
-# [Clase002]: [04 - Footprinting: reconocimiento de información pública de sistemas]
+# [Clase006]: [Enumeración de sistemas y detección de vulnerabilidades]
 
 | Metadatos | Detalle |
 | :--- | :--- |
