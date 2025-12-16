@@ -5,7 +5,7 @@
 | **Fecha** | YYYY-MM-DD |
 | **Tiempo estimado** | 2 horas |
 | **Tema** | Vulnerabilidades en Targets LLM: funcionamiento y detección práctica |
-| **Resultado** | Practicar en un laboratorio |
+| **Resultado** | Practicar vulnerabilidades del TopTen de OWASP|
 
 ---
 
