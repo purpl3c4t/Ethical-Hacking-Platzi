@@ -4,6 +4,8 @@ A diferencia de las aplicaciones web, donde el código reside y se ejecuta princ
 Para abordar este entorno hostil, la industria utiliza el **OWASP Mobile Application Security Verification Standard (MASVS)** como referencia de requisitos y la **OWASP Mobile Application Security Testing Guide (MASTG)** como manual de ejecución. 
 Al igual que la clase anterior, esta clase es una introducción para alinearnos a una metodología con la seguridad de que estamos haciendo las pruebas correspondientes y suficientes, apoyados en una organización global y con herramientas para cada fase.
 
+La presente es una descripcíon para ambientes ANDROID. 
+
 ---
 
 > **⚠️ Disclaimer Ético:** Esta información se proporciona con fines exclusivamente educativos y para la formación de profesionales en ciberseguridad. La ejecución de estos ataques en redes sin autorización explícita es ilegal y penada por la ley. Practica siempre en tu propio laboratorio controlado.
