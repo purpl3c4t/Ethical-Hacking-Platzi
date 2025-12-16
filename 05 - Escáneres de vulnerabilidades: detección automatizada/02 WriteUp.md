@@ -1,4 +1,4 @@
-# [Clase002]: [05 - Escáneres de vulnerabilidades: detección automatizada]
+# [Clase005]: [Escáneres de vulnerabilidades: detección automatizada]
 
 | Metadatos | Detalle |
 | :--- | :--- |
