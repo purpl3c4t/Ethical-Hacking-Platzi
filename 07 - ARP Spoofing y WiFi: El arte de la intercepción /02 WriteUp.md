@@ -9,6 +9,10 @@
 
 ---
 
+> **⚠️ Disclaimer Ético:** Esta información se proporciona con fines exclusivamente educativos y para la formación de profesionales en ciberseguridad. La ejecución de estos ataques en redes sin autorización explícita es ilegal y penada por la ley. Practica siempre en tu propio laboratorio controlado.
+
+---
+
 ## 1. Objetivo General
 *Habilidad técnica o concepto se busca demostrar:*
 
