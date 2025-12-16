@@ -59,7 +59,7 @@ Para validar este desafío, tu reto debe concluir con lo siguiente:
 
 ---
 
-## 7. Pistas / Troubleshooting (Opcional)
+## 6. Pistas / Troubleshooting (Opcional)
 
 *Si te quedas atascadx, intenta:*
 * Revisa los logs en `/var/log/...`
