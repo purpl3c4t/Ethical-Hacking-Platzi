@@ -1,11 +1,11 @@
-# [Clase0017]: [OWASP Top 10 Projects (maduros) para Web, Mobile & LLM’s]
+# [Clase0016]: [OWASP Top 10 Projects (maduros) para Web, Mobile & LLM’s]
 
 | Metadatos | Detalle |
 | :--- | :--- |
 | **Fecha** | YYYY-MM-DD |
 | **Tiempo estimado** | 2 horas |
 | **Tema** | OWASP Top 10 Projects (maduros) para Web, Mobile & LLM’s |
-| **Resultado** | Infraestructura lista para ataques controlados|
+| **Resultado** | OWASP Top 10 Projects (maduros) para Web, Mobile & LLM’s |
 
 ---
 
