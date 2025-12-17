@@ -1,66 +1,83 @@
-# Challenge [0002]: [Construcción de labotario de pruebas]
+# Challenge: Reconocimiento Pasivo y Construcción de Dossier de Objetivo
 
 | Información | Detalle |
 | :--- | :--- |
-| **Tema** | [Ej. AWS, SQL Injection, Active Directory] |
-| **Dificultad** | [Baja / Media / Alta] |
-| **Tiempo Estimado** | [Ej. 2 Horas] |
-| **Puntos** | [Ej. 100 pts] |
+| **Tema** | Footprinting: reconocimiento de información pública de sistemas |
+| **Dificultad** | Básica / Intermedia |
+| **Tiempo Estimado** | 2 Horas |
+| **Tipo** | Black Box (Caja Negra) |
 
 ---
 
 ## 1. Contexto del Desafío
-*Describe brevemente el escenario. ¿Por qué el estudiante debe realizar esta tarea extra? ¿Cómo se conecta con el mundo real?*
 
-> **Escenario:** En la sesión guiada, implementamos la base de la infraestructura/ataque. Sin embargo, en un entorno real, los escenarios son más complejos. Como auditor de seguridad, se te ha encargado extender la configuración actual para simular un entorno más realista y probar vectores de ataque adicionales.
+**Escenario:** Usted ha sido contratado como consultor de seguridad para realizar una auditoría de caja negra (Black Box) a una organización objetivo. Antes de lanzar cualquier escáner activo o interactuar directamente con sus servidores (lo cual generaría ruido y alertaría al Blue Team), necesita recopilar la mayor cantidad de información posible utilizando fuentes de acceso público (OSINT).
 
-## 2. Objetivos 
-*Al completar este desafío, el estudiante:*
-* [Habilidad 1: Ej. Desplegar servicios sin asistencia guiada]
-* [Habilidad 2: Ej. Solucionar problemas de conectividad entre redes]
-* [Habilidad 3: Ej. Documentar hallazgos técnicos]
+El objetivo es construir un perfil detallado de la superficie de exposición de la organización para alimentar la siguiente fase de Enumeración. Sin este paso, un ataque es ciego, ruidoso e ineficiente.
+
+**Nota:** Para este desafío, utilizaremos el dominio de práctica `megacorpone.com` (propiedad de Offensive Security para fines educativos) o un objetivo de un programa público de Bug Bounty (como `hackerone.com`). No realice estas acciones contra objetivos sin autorización.
+
+## 2. Objetivos
+
+Al completar este desafío, serás capaz de:
+
+1.  **Mapear la infraestructura de red:** Identificar rangos de IP, servidores de nombres (DNS) y proveedores de alojamiento sin enviar paquetes directos al objetivo.
+2.  **Descubrir activos ocultos:** Localizar subdominios y servidores de desarrollo olvidados mediante el uso de motores de búsqueda avanzados.
+3.  **Perfilar una organización:** Recopilar direcciones de correo electrónico y metadatos de documentos públicos para futuros ataques de ingeniería social o fuerza bruta.
 
 ## 3. Pre-requisitos
-*¿Qué debe tener listo el estudiante antes de empezar?*
-* Haber completado exitosamente el Laboratorio Guiado [ID del Lab].
-* Tener acceso a [Herramientas/Credenciales específicas].
+
+* Haber completado exitosamente la lectura del módulo "Footprinting: reconocimiento de información pública de sistemas".
+* Tener acceso a un navegador web y una terminal Linux (Kali/Parrot) con acceso a internet.
+* Herramientas sugeridas instaladas o accesibles: `whois`, `nslookup` (o `dig`), `theHarvester` y acceso a Google.
 
 ---
 
-## 4. Instrucciones del Desafío 
+## 4. Instrucciones del Desafío
 
-A continuación se detallan las tareas que debes realizar de manera autónoma.
+Haz las siguientes tareas, todas deben ir dirigidas al dominio de la organización donde actualmente trabajas, centro de trabajo, organización o escuela. Este reconocimiento es principalmente pasivo por lo que nos servirá únicamente como ejemplo:
 
-### Tarea 1: [Nombre de la Tarea Principal]
-*Instrucción de alto nivel sobre lo que se debe lograr.*
-* **Requisito A:** [Detalle técnico, ej. El servidor debe usar Ubuntu 20.04]
-* **Requisito B:** [Restricción, ej. No usar la configuración por defecto]
+### Tarea 1: Reconocimiento de Infraestructura y Red
+Debe identificar quién controla el dominio y dónde están alojados los servicios principales.
 
-### Tarea 2: [Nombre de la Tarea de Configuración/Explotación]
-*Instrucción sobre la configuración de seguridad o el ataque a realizar.*
-* Configura [Componente X] para que permita/deniegue [Acción Y].
-* Asegúrate de que [Sistema A] pueda comunicarse con [Sistema B].
+* **Instrucción:** Utilice herramientas de registro y consulta DNS para obtener los datos técnicos del dominio `megacorpone.com`.
+* **Requisito A:** Identifique el Registrador del dominio y los Servidores de Nombres (Name Servers - NS) autoritativos.
+* **Requisito B:** Obtenga los registros MX (Mail Exchange) para determinar qué proveedor gestiona el correo electrónico corporativo.
+* **Requisito C:** Determine la dirección IP del servidor web principal y, utilizando servicios de geolocalización de IP (como `iplocation.net`), identifique el país y el ISP de alojamiento.
 
-### Tarea 3: Verificación y Prueba de Concepto (PoC)
-*Instrucción para demostrar que funciona.*
-* Realiza una prueba de conectividad o explotación.
-* **Comando sugerido:** `[Comando genérico]` (opcional, si se quiere dar una pista).
+### Tarea 2: Descubrimiento de Subdominios y Google Dorking
+Las vulnerabilidades suelen encontrarse en subdominios olvidados (como portales de prueba o VPNs antiguas).
+
+* **Instrucción:** Utilice operadores avanzados de Google (Google Dorks) y herramientas de búsqueda pasiva para listar subdominios.
+* **Requisito A:** Encuentre al menos 3 subdominios válidos (ej. `www`, `mail`, `test`, `dev`, `intranet`).
+    * *Pista:* Use el operador `site:megacorpone.com -www` para filtrar la página principal.
+* **Requisito B:** Utilice el operador `filetype:` para buscar documentos públicos (PDF, DOCX, XLSX) alojados en el dominio. Descargue uno (sin abrirlo directamente si no es en entorno seguro) y extraiga sus metadatos (Autor, Software de creación) usando herramientas como `exiftool`.
+
+### Tarea 3: Recolección de Inteligencia Organizacional 
+Para preparar ataques de contraseñas o ingeniería social, necesita nombres de usuarios reales.
+
+* **Instrucción:** Utilice herramientas automatizadas de OSINT para recolectar direcciones de correo electrónico asociadas al dominio.
+* **Requisito A:** Ejecute la herramienta `theHarvester` limitando la búsqueda a motores públicos (como Google, Bing o LinkedIn).
+* **Requisito B:** Genere una lista de al menos 5 posibles nombres de usuario basados en los correos encontrados (ej. si el correo es `j.doe@megacorpone.com`, el usuario podría ser `jdoe` o `john.doe`).
 
 ---
 
 ## 5. Completitud
 
-Para validar este desafío, tu reto debe concluir con lo siguiente:
+Para validar este desafío, debes generar un reporte simple (archivo de texto o markdown) con la información recopilada.
 
-1.  **Resultado final:** 
-    * *Tarea terminada*
-2.  **Comenta en los comentarios de la clase:**
-    * *¿Qué riesgo de seguridad introdujo la configuración realizada en la Tarea 2?*
+**Resultado final esperado:**
 
----
+1.  **Información de Dominio:**
+    * Registrador: [Nombre]
+    * DNS Servers: [ns1.ejemplo.com, ns2.ejemplo.com]
+    * Servidor de Correo (MX): [Proveedor/Dirección]
+2.  **Activos Descubiertos:**
+    * IP Principal: [Dirección IP]
+    * Subdominios detectados: [Lista de subdominios]
+3.  **Metadatos y Usuarios:**
+    * Software detectado en metadatos: [Ej. Microsoft Word 2013]
+    * Usuarios potenciales: [Lista de usuarios/correos]
 
-## 6. Pistas / Troubleshooting (Opcional)
-
-*Si te quedas atascadx, intenta:*
-* Revisa los logs en `/var/log/...`
-* Recuerda verificar las reglas de firewall/Security Groups.
+**Comenta:**
+*¿Qué riesgo de seguridad representa para una empresa tener documentos PDF con metadatos de "Autor" y "Versión de Software" expuestos públicamente en internet?*
