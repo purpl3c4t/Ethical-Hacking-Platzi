@@ -67,6 +67,8 @@ Para validar este desafío, tu reto debe concluir con la siguiente información:
 3.  Una tabla comparativa simple:
     * Tiempo de Advanced Scan vs. Tiempo de Basic Scan.
     * Cantidad de Vulnerabilidades Críticas (Advanced) vs. (Basic).
-4.  **Comenta en los comentarios de la clase:**
+---
+
+**Comenta en los comentarios de la clase:**
 
 *En un entorno de producción real con servidores legados (antiguos y frágiles), ¿por qué podría ser peligroso utilizar siempre la política de "Advanced Scan" con todas las opciones activadas en lugar de un "Basic Network Scan"?*
