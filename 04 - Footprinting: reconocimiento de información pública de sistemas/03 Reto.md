@@ -15,8 +15,6 @@
 
 El objetivo es construir un perfil detallado de la superficie de exposición de la organización para alimentar la siguiente fase de Enumeración. Sin este paso, un ataque es ciego, ruidoso e ineficiente.
 
-**Nota:** Para este desafío, utilizaremos el dominio de práctica `megacorpone.com` (propiedad de Offensive Security para fines educativos) o un objetivo de un programa público de Bug Bounty (como `hackerone.com`). No realice estas acciones contra objetivos sin autorización.
-
 ## 2. Objetivos
 
 Al completar este desafío, serás capaz de:
@@ -35,7 +33,7 @@ Al completar este desafío, serás capaz de:
 
 ## 4. Instrucciones del Desafío
 
-Haz las siguientes tareas, todas deben ir dirigidas al dominio de la organización donde actualmente trabajas, centro de trabajo, organización o escuela. Este reconocimiento es principalmente pasivo por lo que nos servirá únicamente como ejemplo:
+Para este desafío, utilizaremos el dominio de práctica `megacorpone.com` (propiedad de Offensive Security para fines educativos) o un objetivo de un programa público de Bug Bounty (como `hackerone.com`). *No realice estas acciones contra objetivos sin autorización.*
 
 ### Tarea 1: Reconocimiento de Infraestructura y Red
 Debe identificar quién controla el dominio y dónde están alojados los servicios principales.
