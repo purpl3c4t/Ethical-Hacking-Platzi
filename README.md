@@ -63,3 +63,6 @@ El contenido académico se distribuye en los siguientes módulos especializados:
 
 > **Aviso Legal:**
 > Todo el material, herramientas y técnicas expuestas en este repositorio tienen fines estrictamente académicos y educativos. El objetivo es formar profesionales capaces de identificar y mitigar riesgos de seguridad. El uso indebido de esta información contra sistemas sin autorización explícita es ilegal y responsabilidad exclusiva del usuario.
+
+---
+---
