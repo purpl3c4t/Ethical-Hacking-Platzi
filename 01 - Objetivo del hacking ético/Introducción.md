@@ -1,4 +1,4 @@
-# Objetivo y Uso del Hacking Ético en la Vida Real
+# Uso del Hacking Ético
 
 En un mundo hiperconectado, la seguridad absoluta es una ilusión. La única forma de saber si nuestras defensas funcionan es poniéndolas a prueba. Aquí es donde entra el **Hacking Ético**. En esta lección, exploraremos qué es realmente, por qué es vital para las organizaciones modernas y cómo se diferencia de la ciberdelincuencia.
 
@@ -17,7 +17,7 @@ El **Hacking Ético** (o *White Hat Hacking*) es la práctica de utilizar esas m
 
 ---
 
-## 2. El Objetivo Principal: La Gestión del Riesgo
+## El Objetivo Principal: La Gestión del Riesgo
 
 El hacking ético no se trata solo de encontrar "bugs" en el código. Su objetivo estratégico en la vida real es **proteger los activos de valor** de una organización. Esto se alinea generalmente con la **Tríada CIA**:
 
@@ -29,7 +29,7 @@ El trabajo del hacker ético es demostrar cómo cualquiera de estos tres pilares
 
 ---
 
-## 3. Usos en la Vida Real: ¿Quién contrata hackers?
+## Usos en la Vida Real: ¿Quién contrata hackers?
 
 El hacking ético no es una actividad de nicho; es un estándar de la industria.
 
@@ -48,7 +48,7 @@ Mientras que un *Pentest* busca fallos técnicos, el **Red Teaming** es un simul
 
 ---
 
-## 4. La Línea Roja: Ética y Legalidad
+## La Línea Roja: Ética y Legalidad
 
 Lo que separa a un profesional de un criminal no es la habilidad técnica, sino la **legalidad**.
 
@@ -57,7 +57,8 @@ En la vida real, un hacker ético **NUNCA** toca un sistema sin:
 2.  **Alcance (Scope) Definido:** Una lista clara de qué se puede atacar (ej: "solo el servidor de pruebas") y qué está prohibido (ej: "no atacar el servidor principal en horario laboral").
 3.  **Reporte Responsable:** El hallazgo de una vulnerabilidad crítica se comunica de inmediato y de forma segura al cliente, nunca se publica en foros ni se vende.
 
-### Conclusión
+### Finalmente
+
 El hacking ético transforma la incertidumbre en conocimiento. Al simular ataques controlados, las organizaciones pueden parchear sus debilidades antes de que un atacante real las descubra, ahorrando millones en pérdidas y protegiendo su reputación.
 
 ---
