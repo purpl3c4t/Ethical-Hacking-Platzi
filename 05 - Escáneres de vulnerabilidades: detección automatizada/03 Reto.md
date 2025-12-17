@@ -11,7 +11,7 @@
 
 ## 1. Contexto del Desafío
 
-**Escenario:** Como analista de vulnerabilidades en una empresa de servicios financieros, su supervisor le ha entregado un reporte denso generado mediante una política de "Advanced Scan" (Escaneo Avanzado) de Nessus contra un servidor crítico. Este tipo de escaneo fue muy agresivo, tardó mucho tiempo y generó una cantidad abrumadora de información.
+**Escenario:** Como analista de vulnerabilidades en una empresa de servicios financieros, tu equipo te ha entregado un reporte generado mediante un escaneo "Advanced Scan" (Escaneo Avanzado) de Nessus contra un servidor crítico. Este tipo de escaneo fue muy agresivo, tardó mucho tiempo y generó una cantidad abrumadora de información.
 
 Hay dos retos para esta clase: primero, interpretar ese reporte técnico para priorizar qué arreglar. Segundo, demostrar que se puede configurar un escaneo más eficiente. La tarea es ejecutar un nuevo análisis sobre el mismo objetivo utilizando una política diferente ("Basic Network Scan") para comparar los resultados y determinar si una configuración menos agresiva es suficiente para detectar los riesgos principales sin saturar la red.
 
