@@ -1,4 +1,4 @@
-# Challenge: Reconocimiento Pasivo y Construcción de Dossier de Objetivo
+# [Challenge:0004]: [Footprinting: reconocimiento de información pública de sistemas]
 
 | Información | Detalle |
 | :--- | :--- |
