@@ -1,4 +1,4 @@
-# [Clase002]: [04 - Footprinting: reconocimiento de información pública de sistemas]
+# [Clase0004]: [Footprinting: reconocimiento de información pública de sistemas]
 
 | Metadatos | Detalle |
 | :--- | :--- |
