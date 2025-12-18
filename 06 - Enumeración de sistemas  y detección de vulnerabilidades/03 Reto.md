@@ -33,7 +33,7 @@ Al completar este desafío, serás capaz de:
 
 ---
 
-## 4. Instrucciones del Desafío
+## 4. Instrucciones
 
 A partir del escaneo de nmap que obtengas en el WriteUp, realiza lo siguiente:
 
