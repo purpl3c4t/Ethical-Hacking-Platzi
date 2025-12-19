@@ -64,11 +64,11 @@ Para validar este desafío, tu reto debe concluir con la siguiente información:
 
 1.  El nombre y CVE de la vulnerabilidad crítica analizada en la Tarea 1.
 2.  El archivo exportado del reporte del "Basic Network Scan".
-3.  Una tabla comparativa simple:
+3.  Presta mucha atención a estos parámetros:
     * Tiempo de Advanced Scan vs. Tiempo de Basic Scan.
     * Cantidad de Vulnerabilidades Críticas (Advanced) vs. (Basic).
 ---
 
-**Comenta en los comentarios de la clase:**
+**Comenta en la caja de comentarios de la clase:**
 
 *En un entorno de producción real con servidores legados (antiguos y frágiles), ¿por qué podría ser peligroso utilizar siempre la política de "Advanced Scan" con todas las opciones activadas en lugar de un "Basic Network Scan"?*
