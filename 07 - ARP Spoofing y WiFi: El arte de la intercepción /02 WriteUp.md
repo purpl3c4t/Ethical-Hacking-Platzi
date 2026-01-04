@@ -46,9 +46,11 @@
 **Paso 1.1: Ejecución de la Herramienta**
 Abrimos una terminal con permisos de root y lanzamos Airgeddon.
 
-```bash
+`
 cd airgeddon/
 sudo bash airgeddon.sh
+`
+
 **Paso 1.2: Selección de Interfaz**
 Airgeddon realizará una comprobación de dependencias. Presiona **`[ENTER]`** hasta llegar al menú de selección de interfaz.
 * El script listará tus interfaces de red. Identifica tu tarjeta WiFi USB (ej. `wlan0`).
