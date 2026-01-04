@@ -27,7 +27,7 @@
 ## 2. Requisitos y Entorno
 * **OS:** Kali Linux.
 * **Hardware:** Antena WiFi USB (Chipset Atheros AR9271 o Ralink RT3070 recomendados).
-* **Target:** Router propio (SSID: `Laboratorio_WiFi`) y un cliente conectado (móvil o laptop).
+* **Target:** Router propio (SSID: Router propio) y un cliente conectado (móvil o laptop). Los dispositivos en la WLAN local, siempre que sean propios, funcionan.
 * **Software:** Airgeddon, Aircrack-ng, Wireshark.
 * **Wordlist:** `/usr/share/wordlists/rockyou.txt` (descomprimido).
 
