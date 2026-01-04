@@ -2,47 +2,53 @@
 
 | Metadatos | Detalle |
 | :--- | :--- |
-| **Fecha** | YYYY-MM-DD |
+| **Fecha** | 2024-01-03 |
 | **Tiempo estimado** | 2 horas |
-| **Tema** | Footprinting Externo: reconocimiento de información pública de sistemas |
-| **Resultado** | Infraestructura lista para ataques controlados|
+| **Tema** | Hacking Wireless: WPA2 Cracking & Decryption |
+| **Resultado** | Credenciales obtenidas y tráfico desencriptado |
 
 ---
 
-> **⚠️ Disclaimer Ético:** Esta información se proporciona con fines exclusivamente educativos y para la formación de profesionales en ciberseguridad. La ejecución de estos ataques en redes sin autorización explícita es ilegal y penada por la ley. Practica siempre en tu propio laboratorio controlado.
+> **⚠️ Disclaimer Ético:** Esta información se proporciona con fines exclusivamente educativos. La intercepción de comunicaciones sin consentimiento es un delito federal en la mayoría de los países. Ejecuta estos pasos **únicamente** contra tu propio router y dispositivos.
 
 ---
 
 ## 1. Objetivo General
-*Habilidad técnica o concepto se busca demostrar:*
+*Demostrar la inseguridad de redes WPA2 ante ataques de desautenticación, capturar el "Handshake" criptográfico, obtener la contraseña y utilizarla para desencriptar el tráfico de la red en tiempo real.*
 
 ### Objetivos Específicos
-* Objetivo 1 (Ej. Configurar el entorno)
-* Objetivo 2 (Ej. Explotar la vulnerabilidad X)
-* Objetivo 3 (Ej. Documentar la persistencia)
+1.  Transformar la tarjeta de red a "Modo Monitor" para escuchar tráfico promiscuo.
+2.  Utilizar **Airgeddon** para orquestar un ataque de desautenticación y capturar el 4-Way Handshake.
+3.  Crackear el hash capturado mediante fuerza bruta basada en diccionario.
+4.  Configurar **Wireshark** con la clave obtenida para traducir el tráfico cifrado a texto legible.
 
 ---
 
 ## 2. Requisitos y Entorno
-*Lista las herramientas, máquinas virtuales y configuraciones necesarias antes de empezar.*
-
-* **Sistema Operativo Atacante:** [Ej. Kali Linux 2024.1]
-* **Sistema Objetivo (Target):** [Ej. Metasploitable 2 / AWS EC2 Instance]
-* **Herramientas:** [Ej. Nmap, Burp Suite, AWS CLI]
-* **Archivos Necesarios:** [Lista de wordlists, scripts o binarios]
+* **OS:** Kali Linux.
+* **Hardware:** Antena WiFi USB (Chipset Atheros AR9271 o Ralink RT3070 recomendados).
+* **Target:** Router propio (SSID: `Laboratorio_WiFi`) y un cliente conectado (móvil o laptop).
+* **Software:** Airgeddon, Aircrack-ng, Wireshark.
+* **Wordlist:** `/usr/share/wordlists/rockyou.txt` (descomprimido).
 
 ---
 
-## 3. Escenario / Contexto
-*Explica la situación simulada. Si es un CTF (Capture The Flag), describe la narrativa. Si es una implementación de infraestructura, describe la arquitectura deseada.*
-
-> **Nota:** Toda actividad realizada en este laboratorio se ejecuta en un entorno controlado con fines académicos y éticos.
+## 3. Escenario
+*Estás realizando una auditoría interna. Se ha detectado una red WiFi corporativa que utiliza WPA2-Personal. Debes demostrar que, si la contraseña es débil, un atacante externo puede capturar el tráfico confidencial (HTTP, DNS) simplemente estando en el estacionamiento, sin necesidad de conectarse físicamente a la red.*
 
 ---
 
 ## 4. Desarrollo Paso a Paso (Walkthrough)
 
-### Fase 1: Configuración / Reconocimiento
+### Fase 1: Preparación del Entorno (Airgeddon)
+*Iniciamos la suite y preparamos la tarjeta de red.*
+
+**Paso 1.1: Ejecución de la Herramienta**
+Abrimos una terminal con permisos de root y lanzamos Airgeddon.
+
+```bash
+cd airgeddon/
+sudo bash airgeddon.sh
 *Describe los pasos iniciales. Configuración de red, escaneo de puertos o despliegue de infraestructura.*
 
 **Paso 1.1: [Nombre del Paso]**
