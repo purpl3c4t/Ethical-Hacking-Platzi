@@ -46,10 +46,9 @@
 **Paso 1.1: Ejecución de la Herramienta**
 Abrimos una terminal con permisos de root y lanzamos Airgeddon.
 
-`
-cd airgeddon/
-sudo bash airgeddon.sh
-`
+
+`cd airgeddon/`
+`sudo ./airgeddon.sh`
 
 **Paso 1.2: Selección de Interfaz**
 Airgeddon realizará una comprobación de dependencias. Presiona **`[ENTER]`** hasta llegar al menú de selección de interfaz.
